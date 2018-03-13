@@ -42,7 +42,6 @@ public class ImageViewFullMap extends View {
         mCanvasFullMap = canvas;
 
         Paint paint = new Paint();
-        paint.setColor(Color.GREEN);
 
         switch(mode){
             case 1 :

@@ -60,10 +60,10 @@ public class ActivityHome extends AppCompatActivity {
                     mTouchPointFirstY = y;
                     mImageViewFullMapForDraw.drawFirstCircle(mTouchPointFirstX, mTouchPointFirstY);
                 } else if(mTouchCount == 2){
-                    //todo: 그리기 수행(선을 그리기)
                     mTouchPointSecondX = x;
                     mTouchPointSecondY = y;
                     mImageViewFullMapForDraw.drawSecondCircle(mTouchPointSecondX, mTouchPointSecondY);
+                    mTouchCount = 0;    // 터치 수 초기화
                 } else {    // 3이상이면
                     //todo: 지우고 다시 값 세팅
                 }
